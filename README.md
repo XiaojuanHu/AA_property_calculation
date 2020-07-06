@@ -12,3 +12,6 @@ Get antechamber input files: geometry.pdb(generate from geometry.in by openbabel
 
 ## get_RESP.charges.py
 Script to derive resp charges. Antechamber and get_RESP_input.py are called.
+
+## data_collection.sh
+Collect energy, geometry, partial charges(bader, hirshfeld, resp) information. Side files: coord.xyz(geometry in xyz format), hirsh.chrg(hirshfeld charges).
