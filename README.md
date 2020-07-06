@@ -6,3 +6,9 @@ Get parameters for the generation of total density cube file and electrostatic p
 
 ## bader.py
 Derive bader charges from the results of bader charge analysis code (http://theory.cm.utexas.edu/henkelman/code/bader/).
+
+## get_RESP_input.py
+Get antechamber input files: geometry.pdb(generate from geometry.in by openbabel), geometry.esp(electrostatic potential file in antechamber input format).
+
+## get_RESP.charges.py
+Script to derive resp charges. Antechamber and get_RESP_input.py are called.
