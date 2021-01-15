@@ -17,4 +17,4 @@ Script to derive resp charges. Antechamber and get_RESP_input.py are called.
 Collect energy, geometry, partial charges(bader, hirshfeld, resp) information. Side files: coord.xyz(geometry in xyz format), hirsh.chrg(hirshfeld charges).
 
 ## conn_convert.py
-Generate pdb files of dipeptide-cation systems for openmm and CHARMM according to atom connectivities (Can't work for GLY).
+Generate pdb files of dipeptide+/-cation(Ca/Mg/Ba) systems for openmm and CHARMM according to atom connectivities (Can't work for GLY).
