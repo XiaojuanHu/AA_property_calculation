@@ -1360,12 +1360,13 @@ if __name__=='__main__':
 	with open((os.path.join(os.getcwd(), 'residue.pdb')), 'w') as pdbfile:
 		pdbfile.write('CRYST1    0.000    0.000    0.000  90.00  90.00  90.00 P 1           1' + '\n')
 		
-		for key in types_dictionary.keys()[:-1]:
+		for key in types_dictionary.keys()[:-1]:  # If there is no cation in the system, then for key in types_dictionary.keys():
 			pdbfile.write('{:6s}{:>5d}'.format('ATOM', int(key) + 1)+' ' +'{:4s}'.format(types_dictionary[key])+' ' + '{:<4s}'.format(residue_dictionary[key])+ 'P' + '{:4d}'.format(int(1))\
 			 + '    '+'{:8.3f}{:8.3f}{:8.3f}{:6.2f}{:6.2f}'.format(float(coords[key][0]), float(coords[key][1]), float(coords[key][2]), float(0.00),float(0.00))+'      '\
 			 +'PROA' + '\n' )
 		pdbfile.write('END'+'\n'+'\n')
-		
+	
+	# If there is cation in the system
 	with open((os.path.join(os.getcwd(), 'ba.pdb')), 'w') as pdbfile:
 		pdbfile.write('CRYST1    0.000    0.000    0.000  90.00  90.00  90.00 P 1           1' + '\n')
 		
